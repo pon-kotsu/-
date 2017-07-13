@@ -3,9 +3,9 @@
  <head>
   <meta charset="UTF-8">
 
-  <title>情報基礎最終課題 ~オススメコーデ紹介しちゃうぞ！！~</title>
+  <title>情報基礎最終課題</title>
   <link rel="stylesheet" href="index.css" type="text/css" /> 
- 
+  
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.1/bootstrap.min.js"></script>
 	
@@ -14,64 +14,70 @@
     <script src="js/app.js"></script>
  </head>
  <body>
-     <form id="in">
-     <div class="ColorRadio" id="rdoSex">
-<dt>性別を選択してください</dt>
+      <h1>Weather Snap</h1>
+     <form id="in" name="in">
+    <p></p>
+    
+<dt>Select your sex</dt>
   
-    <li><input type="radio" name="sex" id="male" /><label for="male">男性</label></li>
-    <li><input type="radio" name="sex" id="female" /><label for="female">女性</label></li>
+    <li><input type="radio" name="sex" id="male" /><label for="male">male</label></li>
+    <li><input type="radio" name="sex" id="female" /><label for="female">female</label></li>
   
-</div>
 <br />
-<div class="ColorRadio" id="Age">
-<dt>年齢を選択してください</dt>
+
+<dt>Input your age</dt>
   <input 
-    type="text"
+    type="number"
     id="age"
     value=""
     size="2px"
-    />歳
-</div>
-<div class="wether" id="slecweather">
-    <dt>天気を選択してください</dt>
+    />years old
+
+<br />
+
+    <dt>Slect today's weather</dt>
 <select name="wether">
-<option value="summer">晴れ</option>
-<option value="cloudy">曇り</option>
-<option value="reiny">雨</option>
-<option value="snowy">雪</option>
+<option value="sunny">Sunny or Breezy</option>
+<option value="cloudy">Cloudy</option>
+<option value="rainy">Rainy</option>
+<option value="snowy">Snowy</option>
 </select>
-</div>
-<div class="temp">
-    <dt>温度を入力してください</dt>
+
+<br />
+    <dt>Input today's temperature</dt>
     <input 
-    type="text"
+    type="number"
     id="temp"
     value=""
     size="2px"
     />℃
-</div>
-<div class="humid">
-    <dt>湿度を入力してください</dt>
+
+<br />
+    <dt>Input today's humidity</dt>
     <input 
-    type="text"
+    type="number"
     id="humid"
     value=""
     size="2px"
     />%
-</div>
+
 </form>
+
+<br />
 <div class="submit">
     <input 
     type="submit"
     onclick="showImage()"
     name="submit"
-    value="オススメを表示！！"
+    value="go"
     />
 </div>
+
 <div class="reset">
     <input
     type="reset"
     id="reset"
+    value="reset"
     onclick="reset()"
     />
 </div>
@@ -81,10 +87,11 @@
     type="submit"
     onclick="weather()"
     name="all"
-    value="一括表示！！"
+    value="Weather forecast"
     />
 </div>
-<div id="weather"></div>
 
+<div id="weather"></div>
 </body>
+
 </html>
