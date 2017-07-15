@@ -29,6 +29,7 @@ git clone git://github.com/monkeecreate/jquery.simpleWeather.git
 ## Questions?
 If you have any questions or problems hit me up on [twitter](http://twitter.com/fleetingftw) or create a [new issue](https://github.com/monkeecreate/jquery.simpleWeather/issues/new). Don't forget to check the documentation and FAQ at [simpleweatherjs.com](http://simpleweatherjs.com).
 
-##情報基礎２最終課題（清水先生）
+
+## 情報基礎２最終課題（清水先生）
 Weather Snap 
 その日の天気、温度、年齢からその日のおすすめコーディネートを画像表示してくれるwebアプリケーション
